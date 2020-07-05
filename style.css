@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Comic Neue');
+body{
+  overflow-x: hidden;
+  font-family: 'Comic Neue';
+  color: #505962;
+}
+
+.offset:before{
+  display: block;
+  content: "";
+  height: 3rem;
+  margin-top: -4rem;
+
+}
+
+/*--Navigation--*/
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background:rgb(122, 15, 122) !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.navbar-brand img{
+height: 3.5rem;
+}
+
+.navbar-nav li{
+  padding-right: .5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color:white;
+ 
+  padding-top: .4rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: rgb(248, 167, 224);
+}
+.navbar-toggler .navbar-toggler-icon .custom-toggler{
+  border-color: white!important;
+}
+.custom-toggler .navbar-toggler-icon { 
+  background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(4,121,104,0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: white!important;
+ box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color:black;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+  color:black;
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: black;
+}
+
+
+/*--landing page--*/
+
+
+    
+/*--.home-inner{
+  background-image: url(img/Final\ background.png)
+}--*/
+
+
+.header {
+  background: url('img/PaintHD.jpg') no-repeat center;
+  background-size: cover; 
+  background-attachment:scroll;
+  background-position: center;
+  height:800px ;
+  position: relative;
+}
+
+.header .Green{
+  color:purple;
+}
+.header .p-large{
+  color: #5e146d;
+}
+
+.header .text-container{
+  padding-top: 16rem;
+}
+
+.btn-solid-lg{
+  border-width: medium;
+  border-radius: 0.3;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color:green;
+  text-align: center;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+/*=====About=====*/
+
+.image-fluid{
+  width:auto;
+  height:300px;
+  padding: 1rem;
+  border: 3px solid rgb(244, 200, 13);
+  border-radius: 4px;
+  box-shadow: 8px 5px 5px rgba(198, 121, 198, 0.27);
+}
+
+.row-padding{
+  padding-top: 10px!important;
+  padding-bottom: 60px;
+}
+
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+    background-color: white;
+    color:black;
+   
+    font-size:18px;
+}
+
+.p-4{
+  padding:3rem!important;
+}
+
+.about-container{
+    padding: 1rem;
+}
+.about-container h1{
+ 
+    color: black;
+    padding: 1rem;
+}
+/*====End of About====*/
+/*=======Interests========*/
+.interest{
+    background: rgb(235, 235, 235);
+}
+
+.single-test{
+     box-shadow: 10px 10px 10px rgba(159, 125, 159, 0.28);
+     color: black;
+ 
+     margin-bottom: 5rem;
+     margin-right: 1rem;
+     margin-left: 1rem;
+     
+}
+.img-text{
+    padding: 1rem;
+   font-size: 18px;
+}
+
+.img-area{
+    overflow: hidden;
+}
+
+.img-area img{
+    transition: all 1.5s ease;
+}
+
+.img-area:hover img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+/*=======End of Interests========*/
+
+
+
+/*=======Gallery========*/
+
+.gallery-area {
+  background-image:linear-gradient(rgba(33, 31, 31, 0.6), rgba(0, 0, 0, 0.6)), url('img/wooden.png');
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment:scroll;
+  background-position: center;
+  height:100%;
+  width:100%;
+  padding-bottom: 8rem;
+}
+
+.gallery-container{
+    padding-bottom: 6rem;
+}
+
+.fit-image{
+    height: 100%;
+    width: 100%;
+    border: 6px solid rgb(0, 0, 0);
+    border-radius: 4px;
+   box-shadow: 8px 5px 5px rgba(245, 245, 245, 0.27);
+}
+
+#my-grid{
+    margin-top: 20px;
+}
+
+.grid-padding{
+    padding: 0 20px;
+    padding-top: 100px;
+}
+
+.grid-padding img{
+    margin-bottom: 15px;
+    transition: 0.8s ease;
+}
+
+.grid-padding img:hover{
+    box-shadow: 0 10px 40px 0 rgba(0,0,0,0.5);
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+.col-sm-4{
+    padding-right: 40px;
+    padding-left: 40px;
+}
+/*============End Gallery==========*/
+
+
+
+/* contact section*/
+.footer-area {
+  background: url('img/contactHD.jpg');
+  background-size: cover; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment:scroll;
+  background-position: center;
+  height:auto;
+  width:100%;
+  padding-bottom: 8rem;
+}
+
+.contact-card {
+  box-shadow: 10px 10px 5px rgba(74, 1, 87, 0.6);
+  max-width: auto;
+  margin: auto;
+
+  font-size: 18px;
+  background-color:rgb(255, 255, 255);
+  border-radius: 25px;
+  padding: 2rem;
+ color: black;
+   
+}
+
+ .contact-container{
+    padding-top: 6rem;
+}
+
+.vl{
+    border-left: 2px solid rgb(122, 15, 122);
+    height: 400px;
+    padding: 4rem;
+   
+}
+
+.rounded-circle{
+  padding:50px;
+}
+
+.link{
+    color: purple;
+}
+/*.card-button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(122, 15, 122);
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 25px;
+}*/
+
+.card-button:hover, a:hover {
+  opacity: 0.7;
+}
+
+.heading-container{
+    padding-bottom: 2rem;
+    
+
+}
+
+.hr1{
+    border-color: purple;
+}
+.contact-line{
+    padding: 1.5rem;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.footer-row {
+  background-color: rgb(122, 15, 122);
+  padding: 0.5rem;
+  color: azure;
+}
+
+@media only screen and (max-width: 991px) {
+  .vl{
+    transform: rotate(90deg);
+    
+  }
+    
+@media only screen and (max-width: 991px) {
+.vl-container{
+    height:100px;
+}
+  
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
